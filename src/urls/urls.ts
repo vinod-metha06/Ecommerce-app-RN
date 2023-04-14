@@ -1,0 +1,1 @@
+export const BESTSELLINGPHONES ='https://ecom07.000webhostapp.com/Ecommerce/bestsellingphones.php'
