@@ -15,6 +15,7 @@ export const reducer=(state=initialState,action:Action)=>{
     switch (action.type) {
 
         case EcomAction.BEST_SELLINGS_LOADING:
+            console.log(action.type)
             console.log(1)
             return{
                 ...state,
@@ -22,6 +23,7 @@ export const reducer=(state=initialState,action:Action)=>{
                 data:[]
             }
         case EcomAction.BEST_SELLINGS_LOADED:
+            console.log(action.type)
             console.log(2)
             return{
                 ...state,

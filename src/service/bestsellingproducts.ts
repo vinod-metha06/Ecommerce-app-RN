@@ -8,6 +8,7 @@ export default async function getBestSellingPhonesAPI() {
     console.log(response.data)
     return response;
   } catch (err) {
+    console.log(err)
     throw err;
   }
 }

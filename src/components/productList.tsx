@@ -1,6 +1,9 @@
+import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 import { StyleSheet, FlatList } from 'react-native';
+
 import ProductCard from './productCard';
+
 
 interface Product {
   product_id: string;
@@ -15,12 +18,15 @@ interface ProductListProps {
 }
 
 const ProductList: React.FC<ProductListProps> = ({ products}) => {
+  const navigation=useNavigation();
   const renderProduct = ({ item }: { item: Product }) => (
     <ProductCard
       imageUrl={item.img_name}
       name={item.product_title}
       price={item.product_price}
-     // onPress={() => {}}
+      // onPress={() => {
+      //   navigation.navigate('DetailsScreen');
+      // }}
     />
   );
 

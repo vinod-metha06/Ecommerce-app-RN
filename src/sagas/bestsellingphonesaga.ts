@@ -9,6 +9,7 @@ export default function* GetBestSellingPhone(): any {
     const response = yield getBestSellingPhonesAPI();
     console.log(response.data)
     yield put(dispatchBestSellingPhoneLoaded(response));
+    console.log("donee")
   } catch (error) {
     console.log("Error")
     yield put(dispatchBestSellingPhoneLoadingError());
